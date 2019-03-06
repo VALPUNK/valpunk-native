@@ -9,12 +9,14 @@
     ]
   },
   "rules": {
+    "jsx-no-lambda": false,
     "no-submodule-imports": false,
     "no-implicit-dependencies": false,
     "jsx-boolean-value": ["never"],
     "interface-name": [true, "never-prefix"],
     "object-literal-sort-keys": false,
     "no-console": false,
+    "variable-name": false,
     "ordered-imports": [
       true,
       {

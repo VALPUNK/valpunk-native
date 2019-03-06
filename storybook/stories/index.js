@@ -1,6 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react-native";
 import { View, Text } from "react-native";
+import { Container, Header, Content, Form } from "native-base";
+import { FixedLabel } from "../../src";
 
 const style = {
   flex: 1,
@@ -12,7 +14,12 @@ const style = {
 const CenteredView = ({ children }) => <View style={style}>{children}</View>;
 
 storiesOf("CenteredView", module).add("default view", () => (
-  <CenteredView>
-    <Text>Hello Storybook</Text>
-  </CenteredView>
+  <Container>
+    <Header />
+    <Content>
+      <Form>
+        <FixedLabel />
+      </Form>
+    </Content>
+  </Container>
 ));

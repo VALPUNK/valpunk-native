@@ -9,9 +9,17 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@types/react-native-material-textfield": "^0.12.2",
+    "@types/yup": "^0.26.11",
     "expo": "^32.0.0",
+    "formik": "^1.5.1",
+    "native-base": "^2.12.0",
     "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-formik": "^1.7.4",
+    "react-native-material-textfield": "^0.12.0",
+    "recompose": "^0.30.0",
+    "yup": "^0.26.10"
   },
   "devDependencies": {
     "@storybook/addon-ondevice-knobs": "^4.1.7",
@@ -20,6 +28,7 @@
     "@types/expo": "^31.0.8",
     "@types/react": "^16.7.20",
     "@types/react-native": "^0.57.31",
+    "@types/recompose": "^0.30.5",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "tslint-react": "^3.6.0",
