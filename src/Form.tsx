@@ -6,25 +6,16 @@ import {
   NativeTouchEvent,
   View
 } from "react-native";
-import {
-  handleTextInput,
-  withNextInputAutoFocusForm,
-  withNextInputAutoFocusInput
-} from "react-native-formik";
-import { TextField, TextFieldProps } from "react-native-material-textfield";
-import { compose } from "recompose";
+import { withNextInputAutoFocusForm } from "react-native-formik";
 import * as Yup from "yup";
+import {
+  TextFieldEmail,
+  TextFieldLarge,
+  TextFieldPassword,
+  TextFieldPhone,
+  TextFieldStandard
+} from "./collections";
 
-interface TextFieldInputProps extends TextFieldProps {
-  label?: string;
-  name?: string;
-  type?: string;
-}
-
-const TextFieldInput: React.ComponentClass<TextFieldInputProps, any> = compose(
-  handleTextInput,
-  withNextInputAutoFocusInput
-)(TextField);
 const Form = withNextInputAutoFocusForm(View);
 
 const validationSchema = Yup.object().shape({
@@ -48,35 +39,17 @@ export const FormikForm = () => (
 
       return (
         <Form>
-          <TextFieldInput
-            label="Small Textfield"
-            name="small_textfield"
-            type="name"
-          />
-          <TextFieldInput
-            label="Large Textfield"
-            name="large_textfield"
-            type="name"
-            numberOfLines={5}
-            multiline
-          />
-          <TextFieldInput
-            label="Email"
-            name="email"
-            type="email"
-            keyboardType="email-address"
-          />
-          <TextFieldInput label="Password" name="password" type="password" />
-          <TextFieldInput label="First Name" name="firstName" type="name" />
-          <TextFieldInput
+          <TextFieldStandard label="Small Textfield" name="small_textfield" />
+          <TextFieldLarge label="Large Textfield" name="large_textfield" />
+          <TextFieldEmail label="Email" name="email" />
+          <TextFieldPassword label="Password" name="password" />
+          <TextFieldPhone
             label="Phone"
             name="phone"
-            type="phone"
-            keyboardType="phone-pad"
-            // disabled
-            // defaultValue="default value"
-            // disabledLineWidth={0}
-            // editable={false}
+            defaultValue={"1234567"}
+            editable={false}
+            prefix="123"
+            title="title"
           />
           <Button onPress={handleSubmit} title="SUBMIT" />
         </Form>

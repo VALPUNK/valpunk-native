@@ -1,6 +1,8 @@
 {
   "name": "valpunk-native",
   "main": "node_modules/expo/AppEntry.js",
+  "module": "build/dist/index.js",
+  "typings": "build/dist/index.d.ts",
   "types": "node_modules/@types",
   "scripts": {
     "start": "expo start",
