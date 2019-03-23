@@ -24,7 +24,7 @@
     "importHelpers": true,
     // "strict": true,
     "noImplicitReturns": true,
-    "allowJs": false,
+    "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitThis": true,
     "noImplicitAny": true,

@@ -1,23 +1,22 @@
 import React from "react";
-import {
-  handleTextInput,
-  withNextInputAutoFocusInput
-} from "react-native-formik";
-import { TextField, TextFieldProps } from "react-native-material-textfield";
+import { handleTextInput } from "react-native-formik";
 import { compose } from "recompose";
+import TextField, { TextFieldProps } from "../../TestField/components/field";
 
 export interface TextFieldInputProps extends TextFieldProps {
   label?: string;
   name?: string;
   type?: string;
+  required?: boolean;
 }
 
 export const TextFieldBase: React.ComponentClass<
   TextFieldInputProps,
   any
 > = compose(
-  handleTextInput,
-  withNextInputAutoFocusInput
+  handleTextInput
+  // withNextInputAutoFocusInput
+  // @ts-ignore
 )(TextField);
 
 export const TextFieldInput = (props: TextFieldInputProps) => {

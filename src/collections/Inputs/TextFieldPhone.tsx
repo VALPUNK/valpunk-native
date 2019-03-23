@@ -8,24 +8,13 @@ export const TextFieldPhone = (props: TextFieldInputProps) => {
     console.log("hi");
   };
   return (
-    <View
-      style={
-        {
-          // backgroundColor: "orange"
-        }
-      }
-    >
-      <TouchableOpacity>
-        <Icon type="FontAwesome" name="phone" onPress={onPress} />
-      </TouchableOpacity>
-      <TextFieldInput
-        type="phone"
-        keyboardType="phone-pad"
-        renderAccessory={PhoneButton}
-        style={{ display: "flex", flex: 1, backgroundColor: "blue" }}
-        {...props}
-      />
-    </View>
+    <TextFieldInput
+      type="phone"
+      keyboardType="phone-pad"
+      renderAccessory={PhoneButton}
+      style={{ display: "flex", flex: 1, backgroundColor: "blue" }}
+      {...props}
+    />
   );
 };
 

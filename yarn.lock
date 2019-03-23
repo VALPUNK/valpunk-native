@@ -1257,7 +1257,7 @@
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.5.1.tgz#a38f69c62528d56ba7bd1f91335a8004988d72f7"
   integrity sha512-mNhVdZHdtKHMMxbqzNK3RzkBcN1cux3AvuCYGTvjEIQT2uheH3eCAyYsbMbh2Bq8nXkeOWs1kyDiF7geWRFQ4Q==
 
-"@types/react-native-material-textfield@^0.12.2":
+"@types/react-native-material-textfield@^0.12.2", "@types/vp-textfield@npm:@types/react-native-material-textfield":
   version "0.12.2"
   resolved "https://registry.yarnpkg.com/@types/react-native-material-textfield/-/react-native-material-textfield-0.12.2.tgz#410a1bf59c64f90bc8d193e29e117fbe97b9e848"
   integrity sha512-eLaewUEXD26+NgnOclYufpFxM3D+khbirndxSHp4drhOu4RqpYcWoUAELeUhxfND1e+QEz/Nw0xjt5k1Cwsp6A==

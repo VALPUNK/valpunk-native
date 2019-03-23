@@ -1,8 +1,8 @@
 import * as Expo from "expo";
 import * as React from "react";
 import { Platform, SafeAreaView, StatusBar, Text, View } from "react-native";
-import { Test } from "./Test";
 import { FormikForm } from "./Form";
+
 export default class FixedLabelExample extends React.Component<
   {},
   { isReady: boolean }

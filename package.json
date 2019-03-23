@@ -31,6 +31,7 @@
     "@types/react": "^16.7.20",
     "@types/react-native": "^0.57.31",
     "@types/recompose": "^0.30.5",
+    "@types/vp-textfield": "npm:@types/react-native-material-textfield",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "tslint-react": "^3.6.0",

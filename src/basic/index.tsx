@@ -3,5 +3,6 @@ import {
   TextFieldInput,
   TextFieldInputProps
 } from "./TextFieldInput/TextFieldInput";
+import { FinalInput } from "./BascInput";
 
-export { FixedLabel, TextFieldInput, TextFieldInputProps };
+export { FixedLabel, TextFieldInput, TextFieldInputProps, FinalInput };
